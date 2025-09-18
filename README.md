@@ -1,4 +1,4 @@
-# AuthPractice (MEN Stack)
+# CBT Quiz App (MEN Stack)
 
 A simple authentication and quiz web application built with MongoDB, Express.js, and Node.js (MEN stack). The app demonstrates user registration, login, JWT-based authentication, admin question management, and quiz-taking with scoring.
 
