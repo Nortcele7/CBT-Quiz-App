@@ -1,0 +1,132 @@
+[
+    {
+        "subject": "Physics",
+        "question": "A particle moves along a straight line with velocity v(t) = 3t² - 12t + 9 m/s. At what time does the particle change direction?",
+        "options": [
+            "1s",
+            "2s",
+            "3s",
+            "4s"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "What is the value of ∫(0 to π/2) sin²x dx?",
+        "options": [
+            "π/8",
+            "π/4",
+            "π/2",
+            "π"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Which of the following has the highest electron affinity?",
+        "options": [
+            "Fluorine",
+            "Chlorine",
+            "Bromine",
+            "Iodine"
+        ],
+        "correctOption": 1,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "A convex lens of focal length 15 cm forms an image at 30 cm. What is the object distance?",
+        "options": [
+            "10 cm",
+            "15 cm",
+            "30 cm",
+            "45 cm"
+        ],
+        "correctOption": 2,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "If the roots of the equation x² - 5x + k = 0 differ by 1, what is the value of k?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "correctOption": 2,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Which of the following is not a transition metal?",
+        "options": [
+            "Zinc",
+            "Copper",
+            "Silver",
+            "Iron"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "What is the SI unit of electrical conductance?",
+        "options": [
+            "Ohm",
+            "Siemens",
+            "Farad",
+            "Henry"
+        ],
+        "correctOption": 1,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "What is the derivative of ln(x² + 1)?",
+        "options": [
+            "1/(x²+1)",
+            "2x/(x²+1)",
+            "2x",
+            "x/(x²+1)"
+        ],
+        "correctOption": 1,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "How many isomers does pentane (C₅H₁₂) have?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correctOption": 1,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "A 2 kg object is moving at 3 m/s. What is its kinetic energy?",
+        "options": [
+            "6 J",
+            "9 J",
+            "12 J",
+            "18 J"
+        ],
+        "correctOption": 1,
+        "marks": 1,
+        "negativeMarks": 0.1
+    }
+]

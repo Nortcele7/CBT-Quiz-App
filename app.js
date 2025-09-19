@@ -1,6 +1,10 @@
 const cookieParser = require("cookie-parser");
 const express = require("express");
 const path = require("path");
+const fs = require("fs")
+
+const multer = require("multer")
+
 const app = express();
 
 const userModel = require("./models/user");
@@ -10,7 +14,8 @@ const questionModel = require("./models/questions");
 const bcrypt = require("bcrypt");
 
 const jwt = require("jsonwebtoken");
-const { create } = require("domain");
+
+const upload = multer({dest: "public/uploads/"})
 
 app.set("view engine", "ejs");
 app.use(express.json());
@@ -63,7 +68,7 @@ app.post("/login", async (req, res) => {
       if (result == true && req.body.email == "admin@gmail.com") {
         let token = jwt.sign({ email: user.email }, "shhhhhhh");
         res.cookie("token", token);
-        res.render("admin");
+        res.render("admin_landing_page");
       } else if (result) {
         let token = jwt.sign({ email: user.email }, "shhhhhhh");
         res.cookie("token", token);
@@ -116,6 +121,31 @@ app.post("/calculateResults", async (req, res) => {
 
   res.render("result", { answers, questions });
 });
+
+app.get("/createQuestions",(req,res)=>{
+  res.render("admin_create_questions")
+})
+
+app.get("/admin_upload",(req,res)=>{
+  res.render("admin_upload")
+})
+
+app.post("/uploadQuestions", upload.single("questionFile") , async(req,res)=>{
+    // 1. Get uploaded file path
+  const filePath = req.file.path;
+
+  // 2. Read the file
+  const data = fs.readFileSync(filePath, "utf8");
+
+  // 3. Parse JSON
+  const questions = JSON.parse(data); // assuming the JSON is an array of questions
+
+  // 4. Insert into MongoDB
+  await questionModel.insertMany(questions);
+
+  res.render("admin_landing_page");
+})
+
 
 app.listen(3000, () => {
   console.log("Running successfully on http://localhost:3000");

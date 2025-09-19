@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex gap-10 items-center justify-center min-h-screen bg-gray-100">
+
+  <!-- Card -->
+  <div class="bg-white shadow-lg rounded-xl w-64 h-96 p-6 flex flex-col justify-between">
+    <!-- Image / Top section -->
+    <div class="h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+      <span class="text-gray-500">Image Here</span>
+    </div>
+
+    <!-- Text / Middle section -->
+    <div class="flex-1 mb-4">
+      <h2 class="text-xl font-bold mb-2">Create Questions</h2>
+      <p class="text-gray-600 text-sm">
+        Create Questions and add them
+      </p>
+    </div>
+
+    <!-- Button / Bottom section -->
+    <a href="/createQuestions" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+      Create
+    </a>
+  </div>
+
+  <div class="bg-white shadow-lg rounded-xl w-64 h-96 p-6 flex flex-col justify-between">
+    <!-- Image / Top section -->
+    <div class="h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+      <span class="text-gray-500">Image Here</span>
+    </div>
+
+    <!-- Text / Middle section -->
+    <div class="flex-1 mb-4">
+      <h2 class="text-xl font-bold mb-2">Upload Questions</h2>
+      <p class="text-gray-600 text-sm">
+        Upload questions files in JSON
+      </p>
+    </div>
+
+    <!-- Button / Bottom section -->
+    <a href="admin_upload" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+      Upload
+    </a>
+  </div>
+
+</body>
+</html>
