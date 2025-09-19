@@ -6,7 +6,9 @@ A simple authentication and quiz web application built with MongoDB, Express.js,
 
 - User registration with hashed passwords (bcrypt)
 - User login with JWT authentication (jsonwebtoken)
-- Admin panel for adding quiz questions
+- Admin landing page with two modes:
+   - **Create Questions**: Add questions one by one via a form
+   - **Upload Questions**: Bulk upload questions from a JSON file
 - Quiz interface for users
 - Result calculation with positive and negative marking
 - Logout functionality
@@ -24,7 +26,9 @@ A simple authentication and quiz web application built with MongoDB, Express.js,
 ├── views/                # EJS templates
 │   ├── index.ejs         # Registration page
 │   ├── login.ejs         # Login page
-│   ├── admin.ejs         # Admin question creation
+│   ├── admin_landing_page.ejs # Admin landing page (choose create/upload)
+│   ├── admin_create_questions.ejs # Admin: create questions via form
+│   ├── admin_upload.ejs  # Admin: upload questions from JSON
 │   ├── loggedin.ejs      # Quiz interface
 │   └── result.ejs        # Quiz results
 ```
@@ -48,7 +52,9 @@ A simple authentication and quiz web application built with MongoDB, Express.js,
 
 - **Register** a new user on the home page.
 - **Login** as a user or as admin (`admin@gmail.com` for admin access).
-- **Admin** can add quiz questions.
+- **Admin** can:
+   - **Create Questions**: Add questions one by one using the form on the "Create Questions" page.
+   - **Upload Questions**: Upload a JSON file containing an array of questions on the "Upload Questions" page. The questions will be parsed and added to the database in bulk.
 - **Users** can take quizzes and view results with scoring.
 - **Logout** to end the session.
 
