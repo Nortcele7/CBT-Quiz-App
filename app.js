@@ -5,6 +5,8 @@ const fs = require("fs")
 
 const multer = require("multer")
 
+const protectRoute = require("./middleware/auth")
+
 const app = express();
 
 const userModel = require("./models/user");
@@ -42,8 +44,10 @@ app.post("/create", (req, res) => {
 
       const email = req.body.email;
 
-      let token = jwt.sign({ email }, "shhhhhhh");
+      if(req.body.email === "admin@gmail.com") {
+      const token = jwt.sign({ email: req.body.email, role: "admin" }, "shhhhhhh");
       res.cookie("token", token);
+      }
 
       res.redirect("/login");
     });
@@ -70,8 +74,6 @@ app.post("/login", async (req, res) => {
         res.cookie("token", token);
         res.render("admin_landing_page");
       } else if (result) {
-        let token = jwt.sign({ email: user.email }, "shhhhhhh");
-        res.cookie("token", token);
 
         let questions = await questionModel.find();
 
@@ -122,11 +124,11 @@ app.post("/calculateResults", async (req, res) => {
   res.render("result", { answers, questions });
 });
 
-app.get("/createQuestions",(req,res)=>{
+app.get("/createQuestions",protectRoute,(req,res)=>{
   res.render("admin_create_questions")
 })
 
-app.get("/admin_upload",(req,res)=>{
+app.get("/admin_upload", protectRoute, (req,res)=>{
   res.render("admin_upload")
 })
 
