@@ -11,6 +11,13 @@ A simple authentication and quiz web application built with MongoDB, Express.js,
    - **Upload Questions**: Bulk upload questions from a JSON file
 - Quiz interface for users
 - Result calculation with positive and negative marking
+   - Each question is scored as follows:
+      - **Correct**: Full marks for the question
+      - **Incorrect**: Negative marks (if set for the question)
+      - **Unanswered**: 0 points
+   - The result page displays:
+      - Total points obtained and total possible points
+      - Per-question breakdown: marks, obtained points, and status (Correct/Incorrect/Unanswered)
 - Logout functionality
 - EJS templating and TailwindCSS for UI
 
@@ -55,7 +62,9 @@ A simple authentication and quiz web application built with MongoDB, Express.js,
 - **Admin** can:
    - **Create Questions**: Add questions one by one using the form on the "Create Questions" page.
    - **Upload Questions**: Upload a JSON file containing an array of questions on the "Upload Questions" page. The questions will be parsed and added to the database in bulk.
-- **Users** can take quizzes and view results with scoring.
+- **Users** can take quizzes and view results with detailed scoring:
+   - See total points and possible points
+   - See per-question feedback: obtained marks, correct/incorrect/unanswered status, and color-coded answers
 - **Logout** to end the session.
 
 ## Dependencies
