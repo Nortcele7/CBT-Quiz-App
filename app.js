@@ -25,8 +25,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cookieParser());
 
-app.get("/", (req, res) => {
-  res.render("index");
+app.get("/",(req,res)=>{
+  res.render("start")
+})
+
+app.get("/register", (req, res) => {
+  res.render("register");
 });
 
 app.post("/create", (req, res) => {
@@ -75,15 +79,20 @@ app.post("/login", async (req, res) => {
         res.render("admin_landing_page");
       } else if (result) {
 
-        let questions = await questionModel.find();
-
-        res.render("loggedin", { questions });
+        let user = await  userModel.findOne({email: req.body.email})
+        res.render("user_landing_page", {username: user.username})
       } else {
         res.send("Something went wrong");
       }
     }
   );
 });
+
+app.get("/questions", async (req,res)=>{
+  let questions = await questionModel.find();
+  res.render("loggedin", { questions });
+
+})
 
 // cookie delete garepachi logout garna milcha
 app.get("/logout", (req, res) => {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-blue-100 min-h-screen flex flex-col items-center justify-center font-sans">
+
+    <h1 class="text-4xl font-bold text-gray-800 mb-10">Hello <%= username %></h1>
+
+    <div class="flex flex-wrap justify-center gap-8">
+
+        <!-- Questions Card -->
+        <a href="/questions" class="group relative bg-white shadow-lg rounded-xl p-8 w-72 hover:bg-blue-200 transition duration-300 transform hover:-translate-y-2 hover:scale-105">
+            <div class="flex flex-col items-center">
+                <svg class="w-12 h-12 text-blue-500 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m2 0h.01M12 4.5v15m-6-6h12"></path>
+                </svg>
+                <h2 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-700">Questions</h2>
+                <p class="text-gray-500 text-center">Test your knowledge with quizzes and exercises.</p>
+            </div>
+        </a>
+
+        <!-- Progress Card -->
+        <a href="/progress" class="group relative bg-white shadow-lg rounded-xl p-8 w-72 hover:bg-green-200 transition duration-300 transform hover:-translate-y-2 hover:scale-105">
+            <div class="flex flex-col items-center">
+                <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M3 9h18M9 3v6m6 0v6"></path>
+                </svg>
+                <h2 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-green-700">Progress</h2>
+                <p class="text-gray-500 text-center">Track your learning and see your growth over time.</p>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>
