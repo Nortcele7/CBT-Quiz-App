@@ -206,7 +206,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 🌟 Acknowledgments
 
-- Built with ❤️ by the Shreyam Regmi
+- Built with ❤️ by Shreyam Regmi
 - Special thanks to the open-source community
 - Powered by modern web technologies
 
