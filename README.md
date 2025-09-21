@@ -1,79 +1,194 @@
-# CBT Quiz App (MEN Stack)
+<div align="center">
+  
+  <!-- Logo placeholder - you can replace this with your actual logo -->
+  <img src="./public/images/cohesion_logo.png" alt="Cohesion Logo" width="200"/>
+  
+  # Cohesion - CBT Quiz Platform
+  
+  *Building Knowledge Through Connected Learning*
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Node.js](https://img.shields.io/badge/Node.js-16.0%2B-green.svg)](https://nodejs.org/)
+  [![MongoDB](https://img.shields.io/badge/MongoDB-Database-green.svg)](https://www.mongodb.com/)
+  [![Express.js](https://img.shields.io/badge/Express.js-Framework-lightgrey.svg)](https://expressjs.com/)
+  
+</div>
 
-A simple authentication and quiz web application built with MongoDB, Express.js, and Node.js (MEN stack). The app demonstrates user registration, login, JWT-based authentication, admin question management, and quiz-taking with scoring.
+---
 
-## Features
+## 🎯 About Cohesion
 
-- User registration with hashed passwords (bcrypt)
-- User login with JWT authentication (jsonwebtoken)
-- Admin landing page with two modes:
-   - **Create Questions**: Add questions one by one via a form
-   - **Upload Questions**: Bulk upload questions from a JSON file
-- Quiz interface for users
-- Result calculation with positive and negative marking
-   - Each question is scored as follows:
-      - **Correct**: Full marks for the question
-      - **Incorrect**: Negative marks (if set for the question)
-      - **Unanswered**: 0 points
-   - The result page displays:
-      - Total points obtained and total possible points
-      - Per-question breakdown: marks, obtained points, and status (Correct/Incorrect/Unanswered)
-- Logout functionality
-- EJS templating and TailwindCSS for UI
+**Cohesion** is a modern, feature-rich Computer-Based Testing (CBT) platform built with the MEN stack (MongoDB, Express.js, Node.js). Designed to bring learners and educators together, Cohesion provides a seamless experience for creating, managing, and taking quizzes with intelligent scoring and comprehensive analytics.
 
-## Folder Structure
+### 🌟 Why Cohesion?
+
+Cohesion represents the perfect blend of simplicity and power in educational technology. Our platform empowers educators to create engaging assessments while providing students with an intuitive testing environment that promotes learning and growth.
+
+**Key Highlights:**
+- 🔐 **Secure Authentication**: JWT-based security ensuring data protection
+- 📊 **Smart Scoring**: Advanced calculation with positive and negative marking
+- 🎨 **Modern UI**: Clean, responsive design built with TailwindCSS
+- 📁 **Bulk Operations**: Efficient question management with JSON import
+- 📈 **Detailed Analytics**: Comprehensive result breakdown and feedback
+
+## ✨ Features
+
+### 🔐 Authentication & Security
+- **Secure Registration**: Password hashing with bcrypt encryption
+- **JWT Authentication**: Token-based secure login system
+- **Role-based Access**: Separate admin and user interfaces
+
+### 👨‍🏫 Admin Capabilities
+- **Dual Question Management**:
+  - 📝 **Manual Creation**: Add questions one by one via intuitive forms
+  - 📤 **Bulk Upload**: Import questions from JSON files for efficiency
+- **Admin Dashboard**: Centralized control panel for all operations
+
+### 🎓 Student Experience
+- **Interactive Quiz Interface**: Clean, distraction-free testing environment
+- **Real-time Feedback**: Immediate response tracking during quizzes
+
+### 📊 Advanced Scoring System
+- **Intelligent Calculation**: Each question is scored as follows:
+  - ✅ **Correct**: Full marks awarded
+  - ❌ **Incorrect**: Negative marks deducted (configurable)
+  - ⏸️ **Unanswered**: Zero points (no penalty)
+- **Comprehensive Results**: 
+  - Total points vs. possible points
+  - Per-question breakdown with visual indicators
+  - Color-coded answer feedback (Green: Correct, Red: Incorrect, Gray: Unanswered)
+
+### 🎨 User Interface
+- **Modern Design**: Built with TailwindCSS for responsive, mobile-friendly experience
+- **EJS Templating**: Dynamic content rendering for personalized user experience
+
+## 📁 Project Structure
 
 ```
-├── app.js                # Main application file
-├── package.json          # Project metadata and dependencies
-├── models/
-│   ├── user.js           # User schema/model
-│   └── questions.js      # Question schema/model
-├── public/               # Static assets (images, CSS, JS)
-├── views/                # EJS templates
-│   ├── index.ejs         # Registration page
-│   ├── login.ejs         # Login page
-│   ├── admin_landing_page.ejs # Admin landing page (choose create/upload)
-│   ├── admin_create_questions.ejs # Admin: create questions via form
-│   ├── admin_upload.ejs  # Admin: upload questions from JSON
-│   ├── loggedin.ejs      # Quiz interface
-│   └── result.ejs        # Quiz results
+cohesion/
+├── 📄 app.js                    # Main application server
+├── 📦 package.json              # Dependencies and scripts
+├── 🗂️ models/
+│   ├── 👤 user.js               # User schema/model
+│   └── ❓ questions.js          # Question schema/model
+├── 🎨 public/                   # Static assets (CSS, JS, images)
+├── 🛡️ middleware/
+│   └── auth.js                  # Authentication middleware
+└── 👀 views/                    # EJS templates
+    ├── 📝 index.ejs             # User registration page
+    ├── 🔐 login.ejs             # Login interface
+    ├── 🏠 admin_landing_page.ejs # Admin dashboard
+    ├── ➕ admin_create_questions.ejs # Manual question creation
+    ├── 📤 admin_upload.ejs      # Bulk question upload
+    ├── 🎯 loggedin.ejs          # Quiz interface
+    └── 📊 result.ejs            # Results & analytics
 ```
 
-## Setup Instructions
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v16.0 or higher)
+- MongoDB (local or cloud instance)
+- Git
+
+### Installation
 
 1. **Clone the repository**
-2. **Install dependencies:**
+   ```bash
+   git clone https://github.com/Nortcele7/CBT-Quiz-App.git
+   cd CBT-Quiz-App
    ```
+
+2. **Install dependencies**
+   ```bash
    npm install
    ```
-3. **Start MongoDB** (ensure it is running on `mongodb://127.0.0.1:27017/authtestapp`)
-4. **Run the app:**
-   ```
+
+3. **Configure MongoDB**
+   - Ensure MongoDB is running on `mongodb://127.0.0.1:27017/authtestapp`
+   - Or update the connection string in `models/user.js` and `models/questions.js`
+
+4. **Start the application**
+   ```bash
    node app.js
    ```
-5. **Open in browser:**
-   Visit [http://localhost:3000](http://localhost:3000)
 
-## Usage
+5. **Access the platform**
+   - Open your browser and navigate to `http://localhost:3000`
+   - Create a new account or use admin credentials
 
-- **Register** a new user on the home page.
-- **Login** as a user or as admin (`admin@gmail.com` for admin access).
-- **Admin** can:
-   - **Create Questions**: Add questions one by one using the form on the "Create Questions" page.
-   - **Upload Questions**: Upload a JSON file containing an array of questions on the "Upload Questions" page. The questions will be parsed and added to the database in bulk.
-- **Users** can take quizzes and view results with detailed scoring:
-   - See total points and possible points
-   - See per-question feedback: obtained marks, correct/incorrect/unanswered status, and color-coded answers
-- **Logout** to end the session.
+## 🎮 How to Use Cohesion
 
-## Dependencies
-- express
-- mongoose
-- ejs
-- bcrypt
-- jsonwebtoken
-- cookie-parser
+### For Students 🎓
+1. **Register**: Create your account on the home page
+2. **Login**: Access your personalized dashboard
+3. **Take Quiz**: Navigate through questions at your own pace
+4. **View Results**: Get detailed feedback with performance analytics
 
-## License
-ISC
+### For Educators 👨‍🏫
+1. **Admin Access**: Login with admin credentials (`admin@gmail.com`)
+2. **Question Management**: Choose between:
+   - **Manual Creation**: Add individual questions with custom parameters
+   - **Bulk Upload**: Import questions via JSON files for efficiency
+3. **Monitor Performance**: Track student progress and results
+
+### Default Admin Credentials
+- **Email**: `admin@gmail.com`
+- **Access**: Use this email during registration for admin privileges
+
+## 🛠️ Technology Stack
+
+<div align="center">
+
+| Technology                                                                                                             | Purpose         | Version |
+| ---------------------------------------------------------------------------------------------------------------------- | --------------- | ------- |
+| ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)             | Backend Runtime | 16.0+   |
+| ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)                                      | Web Framework   | Latest  |
+| ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)               | Database        | Latest  |
+| ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) | Styling         | Latest  |
+| ![EJS](https://img.shields.io/badge/EJS-8BC34A?style=for-the-badge)                                                    | Templating      | Latest  |
+
+</div>
+
+### Core Dependencies
+```json
+{
+  "express": "^5.1.0",
+  "mongoose": "^8.18.1", 
+  "ejs": "^3.1.10",
+  "bcrypt": "^6.0.0",
+  "jsonwebtoken": "^9.0.2",
+  "cookie-parser": "^1.4.7",
+  "multer": "^1.4.5-lts.1"
+}
+```
+
+## 🤝 Contributing
+
+We welcome contributions to make Cohesion even better! Here's how you can help:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+## 📝 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+## 🌟 Acknowledgments
+
+- Built with ❤️ by the Cohesion team
+- Special thanks to the open-source community
+- Powered by modern web technologies
+
+---
+
+<div align="center">
+  
+  **Made with ❤️ for Education**
+  
+  [⭐ Star this repo](https://github.com/Nortcele7/CBT-Quiz-App) | [🐛 Report Issues](https://github.com/Nortcele7/CBT-Quiz-App/issues) | [💡 Request Features](https://github.com/Nortcele7/CBT-Quiz-App/issues)
+  
+</div>

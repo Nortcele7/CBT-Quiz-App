@@ -1,0 +1,54 @@
+[
+    {
+        "subject": "Physics",
+        "question": "A particle moves along a straight line with velocity v(t) = 3t² - 12t + 9 m/s. At what time does the particle change direction?",
+        "options": [
+            "1s",
+            "2s",
+            "3s",
+            "4s"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "What is the value of ∫(0 to π/2) sin²x dx?",
+        "options": [
+            "π/8",
+            "π/4",
+            "π/2",
+            "π"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Which of the following has the highest electron affinity?",
+        "options": [
+            "Fluorine",
+            "Chlorine",
+            "Bromine",
+            "Iodine"
+        ],
+        "correctOption": 2,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "A convex lens of focal length 15 cm forms an image at 30 cm. What is the object distance?",
+        "options": [
+            "10 cm",
+            "15 cm",
+            "30 cm",
+            "45 cm"
+        ],
+        "correctOption": 3,
+        "marks": 1,
+        "negativeMarks": 0.1
+    }
+]
