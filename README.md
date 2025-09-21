@@ -11,6 +11,17 @@
   [![Node.js](https://img.shields.io/badge/Node.js-16.0%2B-green.svg)](https://nodejs.org/)
   [![MongoDB](https://img.shields.io/badge/MongoDB-Database-green.svg)](https://www.mongodb.com/)
   [![Express.js](https://img.shields.io/badge/Express.js-Framework-lightgrey.svg)](https://expressjs.com/)
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen.svg)](https://cohesion-quizapp.onrender.com/)
+  
+  ## 🌐 Live Demo
+  
+  **[Try Cohesion Now →](https://cohesion-quizapp.onrender.com/)**
+  
+  Experience the full power of Cohesion without any setup! The live demo is hosted on Render and ready to use.
+  
+  ### Quick Demo Access:
+  - 🎓 **Student**: Register with any email and start taking quizzes
+  - 👨‍🏫 **Admin**: Use `admin@gmail.com` for admin privileges and question management
   
 </div>
 
@@ -86,12 +97,26 @@ cohesion/
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### 🌐 **Option 1: Try the Live Demo (Recommended)**
+
+**[🔗 Launch Cohesion →](https://cohesion-quizapp.onrender.com/)**
+
+No installation required! Jump right into the action:
+- **Students**: Register and start taking quizzes immediately
+- **Educators**: Use `admin@gmail.com` for instant admin access
+
+---
+
+### 💻 **Option 2: Local Development Setup**
+
+Want to run Cohesion locally or contribute to the project?
+
+#### Prerequisites
 - Node.js (v16.0 or higher)
 - MongoDB (local or cloud instance)
 - Git
 
-### Installation
+#### Installation Steps
 
 1. **Clone the repository**
    ```bash
@@ -113,9 +138,11 @@ cohesion/
    node app.js
    ```
 
-5. **Access the platform**
+5. **Access locally**
    - Open your browser and navigate to `http://localhost:3000`
    - Create a new account or use admin credentials
+
+> **💡 Pro Tip**: Try the [live demo](https://cohesion-quizapp.onrender.com/) first to see if Cohesion meets your needs before setting up locally!
 
 ## 🎮 How to Use Cohesion
 
@@ -189,6 +216,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
   
   **Made with ❤️ for Education**
   
-  [⭐ Star this repo](https://github.com/Nortcele7/CBT-Quiz-App) | [🐛 Report Issues](https://github.com/Nortcele7/CBT-Quiz-App/issues) | [💡 Request Features](https://github.com/Nortcele7/CBT-Quiz-App/issues)
+  [🌐 Try Live Demo](https://cohesion-quizapp.onrender.com/) | [⭐ Star this repo](https://github.com/Nortcele7/CBT-Quiz-App) | [🐛 Report Issues](https://github.com/Nortcele7/CBT-Quiz-App/issues) | [💡 Request Features](https://github.com/Nortcele7/CBT-Quiz-App/issues)
   
 </div>
