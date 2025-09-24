@@ -214,7 +214,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
   
-  **Made with ❤️ for Education**
+  **Made with ❤️ for Education by Shreyam Regmi**
   
   [🌐 Try Live Demo](https://cohesion-quizapp.onrender.com/) | [⭐ Star this repo](https://github.com/Nortcele7/CBT-Quiz-App) | [🐛 Report Issues](https://github.com/Nortcele7/CBT-Quiz-App/issues) | [💡 Request Features](https://github.com/Nortcele7/CBT-Quiz-App/issues)
   
