@@ -8,39 +8,7 @@
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
 
-  <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Quiz Result</h1>
-
-  <% 
-let totalPoints = 0;
-let totalPossible = 0;
-let obtainedPerQuestion = [];
-let tagsPerQuestion = [];
-
-for(let i = 0; i < questions.length; i++) {
-    totalPossible += questions[i].marks;
-    let obtained = 0;
-    let tag = "";
-
-    if(answers[i] === undefined || answers[i] === null || answers[i] === "") {
-        obtained = 0;
-        tag = "Unanswered";
-    } else if(questions[i].correctOption == answers[i]) {
-        obtained = questions[i].marks;
-        tag = "Correct";
-    } else {
-        obtained = -questions[i].negativeMarks;
-        tag = "Incorrect";
-    }
-
-    obtained = Math.round(obtained * 100) / 100;
-    obtainedPerQuestion.push(obtained);
-    tagsPerQuestion.push(tag);
-    totalPoints += obtained;
-    totalPoints = Math.round(totalPoints * 100) / 100;
-}
-%>
-
-
+  <h1 class="text-4xl font-extrabold text-gray-800 mb-8">Quiz Result <%= testId %></h1>
 
   <h2 class="text-2xl font-semibold text-gray-700 mb-10">
     Total Points: <span class="text-blue-600"><%= totalPoints %></span> / <%= totalPossible %>

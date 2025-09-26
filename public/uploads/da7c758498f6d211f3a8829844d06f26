@@ -1,0 +1,2602 @@
+[
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 1",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 2",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 3",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 4",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 5",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 6",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 7",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 8",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 9",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 10",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 11",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 12",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 13",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 14",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 15",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 16",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 17",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 18",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 19",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 20",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 21",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 22",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 23",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 24",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 1-mark question 25",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 26",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 27",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 28",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 29",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 30",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 31",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 32",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 33",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 34",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 35",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 36",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 37",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 38",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 39",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 40",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 41",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 42",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 43",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 44",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 45",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 46",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 47",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 48",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 49",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Physics",
+        "question": "Physics 2-mark question 50",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 1",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 2",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 3",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 4",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 5",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 6",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 7",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 8",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 9",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 10",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 11",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 12",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 13",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 14",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 15",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 16",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 17",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 18",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 19",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 20",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 21",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 22",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 23",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 24",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 1-mark question 25",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 26",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 27",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 28",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 29",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 30",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 31",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 32",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 33",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 34",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 35",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 36",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 37",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 38",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 39",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 40",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 41",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 42",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 43",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 44",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 45",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 46",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 47",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 48",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 49",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Mathematics",
+        "question": "Mathematics 2-mark question 50",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 1",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 2",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 3",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 4",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 5",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 6",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 7",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 8",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 9",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 10",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 11",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 12",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 13",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 14",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 15",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 16",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 17",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 18",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 19",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 20",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 21",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 22",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 23",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 24",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 1-mark question 25",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 26",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 27",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 28",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 29",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 30",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 31",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 32",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 33",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 34",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 35",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 36",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 37",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 38",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 39",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 40",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 41",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 42",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 43",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 44",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 45",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 46",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 47",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 48",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 49",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "Chemistry",
+        "question": "Chemistry 2-mark question 50",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 1",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 2",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 3",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 4",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 5",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 6",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 7",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 8",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 9",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 10",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 11",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 12",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 13",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 14",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 15",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 16",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 17",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 18",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 19",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 20",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 21",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 22",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 23",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 24",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 1-mark question 25",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 0,
+        "marks": 1,
+        "negativeMarks": 0.1
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 26",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 27",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 28",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 29",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 30",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 31",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 32",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 33",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 34",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 35",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 36",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 37",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 38",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 39",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 40",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 41",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 42",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 43",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 44",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 45",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 46",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 47",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 48",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 49",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    },
+    {
+        "subject": "English",
+        "question": "English 2-mark question 50",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "correctOption": 1,
+        "marks": 2,
+        "negativeMarks": 0.2
+    }
+]

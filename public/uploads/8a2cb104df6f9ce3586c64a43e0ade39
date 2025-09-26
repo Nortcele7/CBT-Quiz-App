@@ -1,0 +1,522 @@
+[
+  {
+    "subject": "English",
+    "question": "Of the sentences below which carries the pattern, S + V + O + if-clause?",
+    "options": [
+      "She asked if I was ready.",
+      "She asked me if I was ready.",
+      "She asked in the evening if I was free.",
+      "She asked excitedly if everything was fine."
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "If you ____ it, why don't you go and get it?",
+    "options": [
+      "like",
+      "shall like",
+      "liked",
+      "likes"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "I studied hard; but ____ I failed the exam.",
+    "options": [
+      "unfortunately",
+      "fortunately",
+      "unfortunate",
+      "misfortunately"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "A car ran her down. The passive is ____.",
+    "options": [
+      "She was run down by a car.",
+      "She was being run down by a car.",
+      "She had been run down by a car.",
+      "She is being run by a car."
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "Find out the correct one: I regret ____ you that your application has not been accepted.",
+    "options": [
+      "informing",
+      "inform",
+      "to inform",
+      "informed"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "The shadow moves _______ the sun.",
+    "options": [
+      "with",
+      "along",
+      "around",
+      "by"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "The word 'infirmity' is synonymous to .............",
+    "options": [
+      "hospitality",
+      "capability",
+      "disability",
+      "unity"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "The appropriate meaning of ‘to give one a long rope’ is . . .",
+    "options": [
+      "To allow a man to continue his mistakes or crimes",
+      "To speak ill off",
+      "To dismiss",
+      "To get into trouble"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "Which diphthong is used in the word ‘beard’?",
+    "options": [
+      "/ea/",
+      "/ɪa/",
+      "/ua/",
+      "/ei/"
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "English",
+    "question": "The word 'responsibility' has . . . syllables.",
+    "options": [
+      "two",
+      "six",
+      "five",
+      "four"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "A metallic oxide contains 60% of metal. The equivalent weight of the metal is",
+    "options": [
+      "12",
+      "24",
+      "40",
+      "36"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Phosphoric acid molecule contains",
+    "options": [
+      "Only covalent bond",
+      "Covalent and ionic bonds",
+      "Covalent and co-ordinate bonds",
+      "Covalent, ionic and co-ordinate bonds"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "AgCl is sparingly soluble salt in water. Its solubility can be ___ by adding common salt.",
+    "options": [
+      "increased",
+      "decreased",
+      "unchanged",
+      "stopped"
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Which one of the following statements is not applicable to electrolytic conductors?",
+    "options": [
+      "New product show up to the electrolysis",
+      "Ions are responsible for carrying the current",
+      "Shows a positive temperature coefficient for conductance",
+      "A single stream of electrons flows from cathode to anode"
+    ],
+    "correctOption": 4,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "In the blast furnace, oxide of iron reduced by",
+    "options": [
+      "silica",
+      "CO",
+      "carbon",
+      "lime stone"
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Copper is refined by an electrolytic method in which:",
+    "options": [
+      "the reaction at the anode is Cu → Cu²⁺ + 2e⁻",
+      "the crude metal is used as the cathode",
+      "oxygen is evolved at the anode",
+      "the sheet of pure copper is used as an anode"
+    ],
+    "correctOption": 4,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "In the Solvay's process, the reaction 2NH4Cl + Ca(OH)2 → CaCl2 + 2H2O + 2NH3 takes place in",
+    "options": [
+      "Carbonation tower",
+      "Ammonia recovery tower",
+      "Saturation tank",
+      "Filtration tank"
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Sodium and potassium are kept under",
+    "options": [
+      "water",
+      "alcohol",
+      "kerosene",
+      "ether"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "The addition reaction of Benzene does not occur easily because",
+    "options": [
+      "It has cyclic structure",
+      "It has six H-atoms and six C-atoms",
+      "It has delocalized π electrons",
+      "It has 12 σ bonds"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Which of the following is Friedel-Crafts catalyst?",
+    "options": [
+      "Anhydrous AlCl3",
+      "H2SO4",
+      "PCl5",
+      "CH3COCl"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Household cooking gas is mainly a mixture of",
+    "options": [
+      "methane + ethane",
+      "acetylene + oxygen",
+      "butane + isobutane",
+      "acetylene + hydrogen"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Methyl n-Propyl ether and methyl isopropyl ether are",
+    "options": [
+      "Metamers",
+      "Positional isomers",
+      "Metamers as well as positional isomers",
+      "Functional isomers"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Conversion of acetic acid into chloroacetic acid is carried out using",
+    "options": [
+      "Cl2/ P4",
+      "Conc. HCl",
+      "Cl2/ NaOH",
+      "NaOCl"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Chemistry",
+    "question": "Acid anhydrides on reaction with primary amines give:",
+    "options": [
+      "Amide",
+      "Imide",
+      "Secondary amine",
+      "Imine"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "Two balls of different masses have the same kinetic energy. The ball having greater momentum is",
+    "options": [
+      "lighter one",
+      "heavier one",
+      "both balls",
+      "both having equal masses"
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "Depending on the mission profile the most economical number of steps for a multistage rocket lies in between",
+    "options": [
+      "2,10",
+      "4, 9",
+      "2, 4",
+      "4, 7"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "Hooke’s law essentially defines",
+    "options": [
+      "stress",
+      "strain",
+      "breaking stress",
+      "elastic limit"
+    ],
+    "correctOption": 4,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "If β is the coefficient of superficial expansion then change in volume in terms of original volume V for the temperature change ΔT is given",
+    "options": [
+      "2βVΔT",
+      "3/2 βVΔT",
+      "3/2 βVΔT",
+      "1/2 βVΔT"
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "Water is used to cool the radiator of engines in cars because",
+    "options": [
+      "of its low boiling point",
+      "of its high specific heat",
+      "of its low density",
+      "of its easy availability"
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "The efficiency of a petrol engine is 35% and γ=1.4. the volume compression ratio of the engine is",
+    "options": [
+      "3.23",
+      "2.33",
+      "2.93",
+      "2.53"
+    ],
+    "correctOption": 3,
+    "marks": 2,
+    "negativeMarks": 0.2
+  },
+  {
+    "subject": "Physics",
+    "question": "Spherical aberration in a lens can be reduced by using",
+    "options": [
+      "The lens of large aperture",
+      "The monochromatic light",
+      "The lens such that deviation of light is minimum at one refracting surface",
+      "The lens such that deviation of light is equal at both refracting surfaces"
+    ],
+    "correctOption": 4,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "According to Newton's corpuscular theory of light, when the light travels from rarer to denser the velocity of light ___________.",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains unchanged",
+      "Cannot be predicted"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "Which among the following is not generic property of sound?",
+    "options": [
+      "Viscosity",
+      "Amplitude",
+      "Direction",
+      "Frequency"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "The sonometer wire is vibrating in the third overtone. We may say that there are",
+    "options": [
+      "Two nodes and two antinodes",
+      "One node and two antinodes",
+      "Five nodes and four antinodes",
+      "Three nodes and three antinodes"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "In Engineering, the most economical way to transmit the power is to make the current",
+    "options": [
+      "as small as possible",
+      "as high as possible",
+      "constant",
+      "small and high"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "If temperature is decreased, then the relaxation time of electrons in metal is",
+    "options": [
+      "Increased",
+      "Decreased",
+      "Fluctuate",
+      "Not changed"
+    ],
+    "correctOption": 1,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "The self-inductance of a solenoid is L. If the number of turns in the solenoid is increased to three times by keeping the length and area same the self-inductance will now be:",
+    "options": [
+      "L/3",
+      "L",
+      "3L",
+      "9L"
+    ],
+    "correctOption": 4,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "A hydrogen atom is in first excited state. To ionize the atom, the minimum energy required is",
+    "options": [
+      "13.6 eV",
+      "slightly greater than 13.6 eV",
+      "3.4 eV",
+      "1.5 eV"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "The following one represents an electromagnetic wave",
+    "options": [
+      "α-rays",
+      "β-rays",
+      "γ-rays",
+      "cathode rays"
+    ],
+    "correctOption": 3,
+    "marks": 1,
+    "negativeMarks": 0.1
+  },
+  {
+    "subject": "Physics",
+    "question": "The first discovered series of hydrogen atom is",
+    "options": [
+      "Layman",
+      "Balmer",
+      "Brackett",
+      "Paschen"
+    ],
+    "correctOption": 2,
+    "marks": 1,
+    "negativeMarks": 0.1
+  }
+]

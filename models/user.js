@@ -6,6 +6,9 @@ const userSchema = mongoose.Schema({
     email: String, 
     password: String,
     age: Number,
+    verified: {type:Boolean, default:false},
+    otp: String,
+    otpExpiry: Date
 });
 
 module.exports = mongoose.model('user', userSchema) // users model is exported
