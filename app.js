@@ -28,7 +28,11 @@ app.use(session({
   secret: "shreyamsecret",
   resave: false,
   saveUninitialized: true,
-  cookie: { maxAge: 10 * 60 * 1000 }
+  cookie: { 
+    maxAge: 30 * 60 * 1000, // 30 minutes instead of 10
+    secure: false, // Allow HTTP (important for localhost)
+    httpOnly: true // Security: prevent XSS attacks
+  }
 }));
 
 // MongoDB Connection
@@ -49,27 +53,59 @@ function generateTestId() {
 
 // --- OTP Email Function ---
 async function sendOTPEmail(email, otp) {
-  let transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS },
-    tls: { rejectUnauthorized: false }
-  });
+  try {
+    // Check if email credentials are available
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.error("❌ Email credentials not found in environment variables");
+      throw new Error("Email service not configured");
+    }
 
-  let info = await transporter.sendMail({
-    from: `"Cohesion" <no-reply@yourdomain.com>`,
-    to: email,
-    subject: "OTP Verification for Cohesion",
-    html: `
-      <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-        <h2 style="color: #2E86C1;">Cohesion - OTP Verification</h2>
-        <p>Your <strong>One-Time Password (OTP)</strong> for verification is:</p>
-        <p style="font-size: 20px; font-weight: bold; color: #E74C3C;">${otp}</p>
-        <p>This OTP is valid for <strong>10 minutes</strong>.</p>
-      </div>
-    `
-  });
+    console.log("📧 Attempting to send OTP email to:", email);
+    console.log("📧 Using email service:", process.env.EMAIL_USER);
 
-  console.log("OTP email sent:", info.messageId);
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: { 
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS 
+      },
+      tls: { 
+        rejectUnauthorized: false 
+      }
+    });
+
+    // Test the transporter connection
+    await transporter.verify();
+    console.log("✅ Email server connection verified");
+
+    let info = await transporter.sendMail({
+      from: `"Cohesion" <${process.env.EMAIL_USER}>`,
+      to: email,
+      subject: "OTP Verification for Cohesion",
+      html: `
+        <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+          <h2 style="color: #2E86C1;">Cohesion - OTP Verification</h2>
+          <p>Your <strong>One-Time Password (OTP)</strong> for verification is:</p>
+          <p style="font-size: 20px; font-weight: bold; color: #E74C3C;">${otp}</p>
+          <p>This OTP is valid for <strong>10 minutes</strong>.</p>
+        </div>
+      `
+    });
+
+    console.log("✅ OTP email sent successfully:", info.messageId);
+    return { success: true, messageId: info.messageId };
+
+  } catch (error) {
+    console.error("❌ Failed to send OTP email:", error.message);
+    console.error("❌ Full error:", error);
+    
+    // Return error info instead of throwing
+    return { 
+      success: false, 
+      error: error.message,
+      details: error.code || 'Unknown error'
+    };
+  }
 }
 
 // --- Routes ---
@@ -77,46 +113,314 @@ async function sendOTPEmail(email, otp) {
 // Home
 app.get("/", (req, res) => res.render("start"));
 
+// Debug route for email configuration
+app.get("/debug-email", (req, res) => {
+  const emailConfig = {
+    EMAIL_USER: process.env.EMAIL_USER ? "✅ Set" : "❌ Missing",
+    EMAIL_PASS: process.env.EMAIL_PASS ? "✅ Set" : "❌ Missing",
+    NODE_ENV: process.env.NODE_ENV || "development",
+    platform: process.platform,
+    nodeVersion: process.version
+  };
+  
+  res.json({
+    message: "Email Configuration Debug",
+    config: emailConfig,
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Test email route (for debugging on Render)
+app.get("/test-email", async (req, res) => {
+  const testEmail = req.query.email || "test@example.com";
+  const testOTP = "123456";
+  
+  console.log("🧪 Testing email functionality...");
+  const result = await sendOTPEmail(testEmail, testOTP);
+  
+  res.json({
+    message: "Email Test Result",
+    email: testEmail,
+    result: result,
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Session debug route
+app.get("/debug-session", (req, res) => {
+  // Set a test session value
+  if (req.query.set) {
+    req.session.testEmail = req.query.set;
+  }
+  
+  res.json({
+    message: "Session Debug",
+    sessionData: {
+      email: req.session.email,
+      testEmail: req.session.testEmail,
+      sessionId: req.session.id,
+      cookieExists: !!req.headers.cookie
+    },
+    headers: {
+      userAgent: req.headers['user-agent'],
+      cookie: req.headers.cookie
+    },
+    timestamp: new Date().toISOString()
+  });
+});
+
 // Register
 app.get("/register", (req, res) => res.render("register"));
 app.post("/create", async (req, res) => {
-  const { username, email, password, confirm_password, age } = req.body;
-  if (password !== confirm_password) return res.send("Passwords do not match");
+  try {
+    const { username, email, password, confirm_password, age } = req.body;
+    
+    // Validate password match
+    if (password !== confirm_password) {
+      return res.send(`
+        <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+          <h2 style="color: #E74C3C;">❌ Password Mismatch</h2>
+          <p>The passwords you entered do not match.</p>
+          <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a>
+        </div>
+      `);
+    }
 
-  const otp = Math.floor(100000 + Math.random() * 900000).toString();
-  const otpExpiry = new Date(Date.now() + 10 * 60 * 1000);
-  const hashedPassword = await bcrypt.hash(password, 10);
+    // Check if user already exists
+    const existingUser = await userModel.findOne({ email });
+    if (existingUser) {
+      if (existingUser.verified) {
+        return res.send(`
+          <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+            <h2 style="color: #F39C12;">⚠️ Account Already Exists</h2>
+            <p>An account with this email already exists and is verified.</p>
+            <a href="/login" style="background: #27AE60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Login Instead</a>
+            <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Use Different Email</a>
+          </div>
+        `);
+      } else {
+        // User exists but not verified - resend OTP
+        const newOtp = Math.floor(100000 + Math.random() * 900000).toString();
+        const newOtpExpiry = new Date(Date.now() + 10 * 60 * 1000);
+        
+        existingUser.otp = newOtp;
+        existingUser.otpExpiry = newOtpExpiry;
+        await existingUser.save();
+        
+        req.session.email = email;
+        console.log("💾 Session set for existing user:", { email, sessionId: req.session.id });
+        
+        console.log("🔄 Resending OTP to existing unverified user:", email);
+        const emailResult = await sendOTPEmail(email, newOtp);
+        
+        if (!emailResult.success) {
+          return res.send(`
+            <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+              <h2 style="color: #E74C3C;">📧 Email Service Error</h2>
+              <p>Cannot send verification email at the moment.</p>
+              <p><strong>Error:</strong> ${emailResult.error}</p>
+              <p>Please try again later or contact support.</p>
+              <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a>
+            </div>
+          `);
+        }
+        
+        return res.redirect("/verify-otp");
+      }
+    }
 
-  await userModel.create({ username, email, password: hashedPassword, age, otp, otpExpiry, verified: false });
-  req.session.email = email;
+    // Create new user
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const otpExpiry = new Date(Date.now() + 10 * 60 * 1000);
+    const hashedPassword = await bcrypt.hash(password, 10);
 
-  await sendOTPEmail(email, otp);
-  res.redirect("/verify-otp");
+    console.log("👤 Creating new user:", email);
+    const newUser = await userModel.create({ 
+      username, 
+      email, 
+      password: hashedPassword, 
+      age, 
+      otp, 
+      otpExpiry, 
+      verified: false 
+    });
+
+    req.session.email = email;
+    console.log("💾 Session set for new user:", { email, sessionId: req.session.id });
+
+    // Send OTP email
+    console.log("📧 Sending OTP to new user:", email);
+    const emailResult = await sendOTPEmail(email, otp);
+    
+    if (!emailResult.success) {
+      console.error("❌ Email failed for new user - cleaning up");
+      
+      // Clean up the created user if email fails
+      await userModel.deleteOne({ email });
+      
+      return res.send(`
+        <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+          <h2 style="color: #E74C3C;">📧 Email Service Error</h2>
+          <p>Account created but verification email could not be sent.</p>
+          <p><strong>Technical Details:</strong> ${emailResult.error}</p>
+          <p>The account has been removed. Please try registering again.</p>
+          <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a>
+        </div>
+      `);
+    }
+
+    console.log("✅ Registration successful - OTP sent to:", email);
+    res.redirect("/verify-otp");
+    
+  } catch (error) {
+    console.error("❌ Registration error:", error);
+    
+    // Provide more specific error messages
+    if (error.code === 11000) {
+      return res.send(`
+        <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+          <h2 style="color: #F39C12;">⚠️ Email Already Registered</h2>
+          <p>This email address is already registered.</p>
+          <a href="/login" style="background: #27AE60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Login Instead</a>
+          <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Use Different Email</a>
+        </div>
+      `);
+    }
+    
+    res.send(`
+      <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+        <h2 style="color: #E74C3C;">❌ Registration Error</h2>
+        <p>Something went wrong during registration.</p>
+        <p><strong>Error:</strong> ${error.message}</p>
+        <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a>
+      </div>
+    `);
+  }
 });
 
 // OTP Verification
-app.get("/verify-otp", (req, res) => {
-  if (!req.session.email) return res.send("Session expired. Please register again.");
+app.get("/verify-otp", async (req, res) => {
+  console.log("🔍 Session Debug Info:", {
+    sessionExists: !!req.session,
+    sessionEmail: req.session?.email,
+    sessionId: req.session?.id,
+    cookieSet: !!req.headers.cookie
+  });
+  
+  if (!req.session.email) {
+    console.log("❌ No email in session - redirecting to register");
+    return res.send(`
+      <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+        <h2 style="color: #E74C3C;">⏰ Session Issue</h2>
+        <p>Your registration session is not available.</p>
+        <p><small>Debug: Session email not found</small></p>
+        <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Register Again</a>
+      </div>
+    `);
+  }
+  
+  // Check if user exists and get their info for debugging
+  const user = await userModel.findOne({ email: req.session.email });
+  console.log("📋 OTP Verification page - User status:", {
+    email: req.session.email,
+    userExists: !!user,
+    verified: user ? user.verified : 'N/A',
+    hasOtp: user ? !!user.otp : 'N/A',
+    otpExpiry: user ? user.otpExpiry : 'N/A'
+  });
+  
   res.render("verify-otp");
 });
 
 app.post("/verify-otp", async (req, res) => {
-  const email = req.session.email;
-  const user_otp = req.body.otp;
-  if (!email) return res.send("Session expired. Please register again.");
+  try {
+    const email = req.session.email;
+    const user_otp = req.body.otp;
+    
+    console.log("🔐 OTP Verification attempt:", { email, providedOtp: user_otp });
+    
+    if (!email) {
+      return res.send(`
+        <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+          <h2 style="color: #E74C3C;">⏰ Session Expired</h2>
+          <p>Your verification session has expired.</p>
+          <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Register Again</a>
+        </div>
+      `);
+    }
 
-  const user = await userModel.findOne({ email });
-  if (!user) return res.send("User not found");
-  if (user.otp !== user_otp) return res.send("Invalid OTP");
-  if (user.otpExpiry < new Date()) return res.send("OTP expired");
+    const user = await userModel.findOne({ email });
+    if (!user) {
+      console.log("❌ User not found during OTP verification:", email);
+      return res.send(`
+        <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+          <h2 style="color: #E74C3C;">👤 User Not Found</h2>
+          <p>No user found with this email address.</p>
+          <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Register Again</a>
+        </div>
+      `);
+    }
+    
+    console.log("📋 User OTP verification details:", {
+      userOtp: user.otp,
+      providedOtp: user_otp,
+      otpExpiry: user.otpExpiry,
+      currentTime: new Date(),
+      expired: user.otpExpiry < new Date()
+    });
+    
+    if (user.otp !== user_otp) {
+      console.log("❌ Invalid OTP provided");
+      return res.send(`
+        <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+          <h2 style="color: #E74C3C;">🔐 Invalid OTP</h2>
+          <p>The OTP you entered is incorrect.</p>
+          <p>Please check your email and try again.</p>
+          <a href="/verify-otp" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a>
+        </div>
+      `);
+    }
+    
+    if (user.otpExpiry < new Date()) {
+      console.log("❌ OTP expired");
+      return res.send(`
+        <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+          <h2 style="color: #F39C12;">⏰ OTP Expired</h2>
+          <p>Your OTP has expired (valid for 10 minutes).</p>
+          <p>Please register again to get a new OTP.</p>
+          <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Register Again</a>
+        </div>
+      `);
+    }
 
-  user.verified = true;
-  user.otp = null;
-  user.otpExpiry = null;
-  await user.save();
-  req.session.email = null;
+    // OTP is valid - verify the user
+    user.verified = true;
+    user.otp = null;
+    user.otpExpiry = null;
+    await user.save();
+    req.session.email = null;
 
-  res.send("✅ OTP verified! You can now login.");
+    console.log("✅ User verified successfully:", email);
+    
+    res.send(`
+      <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+        <h2 style="color: #27AE60;">✅ Email Verified!</h2>
+        <p>Your account has been successfully verified.</p>
+        <p>You can now login to access your account.</p>
+        <a href="/login" style="background: #27AE60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Login Now</a>
+      </div>
+    `);
+    
+  } catch (error) {
+    console.error("❌ OTP verification error:", error);
+    res.send(`
+      <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+        <h2 style="color: #E74C3C;">❌ Verification Error</h2>
+        <p>Something went wrong during verification.</p>
+        <a href="/verify-otp" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a>
+      </div>
+    `);
+  }
 });
 
 // Login
