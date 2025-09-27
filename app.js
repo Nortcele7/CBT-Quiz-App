@@ -51,8 +51,64 @@ function generateTestId() {
   ).join('');
 }
 
-// --- OTP Email Function ---
+// --- Enhanced OTP Email Function with Multiple Configurations ---
 async function sendOTPEmail(email, otp) {
+  // Email configurations to try in order
+  const emailConfigs = [
+    {
+      name: "Gmail SMTP (Secure)",
+      config: {
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false,
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS
+        },
+        tls: {
+          rejectUnauthorized: false
+        },
+        connectionTimeout: 10000,
+        greetingTimeout: 5000,
+        socketTimeout: 10000
+      }
+    },
+    {
+      name: "Gmail Service (Legacy)",
+      config: {
+        service: "gmail",
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS
+        },
+        tls: {
+          rejectUnauthorized: false
+        },
+        connectionTimeout: 10000,
+        greetingTimeout: 5000,
+        socketTimeout: 10000
+      }
+    },
+    {
+      name: "Gmail SMTP (Alternative Port)",
+      config: {
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS
+        },
+        tls: {
+          rejectUnauthorized: false
+        },
+        connectionTimeout: 10000,
+        greetingTimeout: 5000,
+        socketTimeout: 10000
+      }
+    }
+  ];
+
   try {
     // Check if email credentials are available
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
@@ -63,47 +119,94 @@ async function sendOTPEmail(email, otp) {
     console.log("📧 Attempting to send OTP email to:", email);
     console.log("📧 Using email service:", process.env.EMAIL_USER);
 
-    let transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: { 
-        user: process.env.EMAIL_USER, 
-        pass: process.env.EMAIL_PASS 
-      },
-      tls: { 
-        rejectUnauthorized: false 
+    // Try each configuration until one works
+    for (let i = 0; i < emailConfigs.length; i++) {
+      const { name, config } = emailConfigs[i];
+      
+      try {
+        console.log(`🔄 Trying ${name} (Attempt ${i + 1}/${emailConfigs.length})`);
+        
+        const transporter = nodemailer.createTransport(config);
+        
+        // Test connection with timeout
+        const verifyPromise = transporter.verify();
+        const timeoutPromise = new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Connection verification timeout')), 15000)
+        );
+        
+        await Promise.race([verifyPromise, timeoutPromise]);
+        console.log(`✅ ${name} connection verified successfully`);
+
+        // Send email with timeout protection
+        const sendPromise = transporter.sendMail({
+          from: `"Cohesion" <${process.env.EMAIL_USER}>`,
+          to: email,
+          subject: "OTP Verification for Cohesion",
+          html: `
+            <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+              <h2 style="color: #2E86C1;">Cohesion - OTP Verification</h2>
+              <p>Your <strong>One-Time Password (OTP)</strong> for verification is:</p>
+              <p style="font-size: 20px; font-weight: bold; color: #E74C3C;">${otp}</p>
+              <p>This OTP is valid for <strong>10 minutes</strong>.</p>
+              <p><small>Sent via ${name}</small></p>
+            </div>
+          `
+        });
+
+        const sendTimeoutPromise = new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Email sending timeout')), 20000)
+        );
+
+        const info = await Promise.race([sendPromise, sendTimeoutPromise]);
+        console.log(`✅ OTP email sent successfully via ${name}:`, info.messageId);
+        return { success: true, messageId: info.messageId, method: name };
+
+      } catch (configError) {
+        console.log(`❌ ${name} failed:`, configError.message);
+        
+        // If this is the last configuration, continue to main error handler
+        if (i === emailConfigs.length - 1) {
+          throw configError;
+        }
+        // Otherwise, try next configuration
+        continue;
       }
-    });
+    }
 
-    // Test the transporter connection
-    await transporter.verify();
-    console.log("✅ Email server connection verified");
-
-    let info = await transporter.sendMail({
-      from: `"Cohesion" <${process.env.EMAIL_USER}>`,
-      to: email,
-      subject: "OTP Verification for Cohesion",
-      html: `
-        <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-          <h2 style="color: #2E86C1;">Cohesion - OTP Verification</h2>
-          <p>Your <strong>One-Time Password (OTP)</strong> for verification is:</p>
-          <p style="font-size: 20px; font-weight: bold; color: #E74C3C;">${otp}</p>
-          <p>This OTP is valid for <strong>10 minutes</strong>.</p>
-        </div>
-      `
-    });
-
-    console.log("✅ OTP email sent successfully:", info.messageId);
-    return { success: true, messageId: info.messageId };
+    // If we get here, all configurations failed
+    throw new Error("All email configurations failed");
 
   } catch (error) {
-    console.error("❌ Failed to send OTP email:", error.message);
+    console.error("❌ Failed to send OTP email after all attempts:", error.message);
     console.error("❌ Full error:", error);
     
-    // Return error info instead of throwing
+    // Development fallback: Log OTP to console if in development mode
+    if (process.env.NODE_ENV === 'development') {
+      console.log("🚨 DEVELOPMENT MODE - OTP Email Failed, but here's your OTP:");
+      console.log(`📧 Email: ${email}`);
+      console.log(`🔐 OTP: ${otp}`);
+      console.log("⚠️ In production, fix email configuration!");
+      
+      return {
+        success: true,
+        messageId: 'DEV_MODE_' + Date.now(),
+        method: 'Development Console Log',
+        devMode: true
+      };
+    }
+    
+    // Return error info for production
     return { 
       success: false, 
       error: error.message,
-      details: error.code || 'Unknown error'
+      details: error.code || 'Unknown error',
+      suggestions: [
+        'Check Gmail App Password is correct (16 characters)',
+        'Verify 2-Factor Authentication is enabled on Gmail',
+        'Ensure EMAIL_USER and EMAIL_PASS environment variables are set',
+        'Try using a different email provider (SendGrid, Mailgun)',
+        'Check if your hosting provider blocks SMTP connections'
+      ]
     };
   }
 }
@@ -214,13 +317,36 @@ app.post("/create", async (req, res) => {
         const emailResult = await sendOTPEmail(email, newOtp);
         
         if (!emailResult.success) {
+          // Check if we're in development mode with console fallback
+          if (emailResult.devMode) {
+            return res.send(`
+              <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center; background: #FFF3CD; border: 1px solid #FFEAA7;">
+                <h2 style="color: #856404;">🔧 Development Mode</h2>
+                <p>Email service is not configured, but your OTP has been logged to the console.</p>
+                <p><strong>Check the terminal/logs for your OTP code!</strong></p>
+                <p><small><strong>Email:</strong> ${email}<br><strong>OTP Method:</strong> ${emailResult.method}</small></p>
+                <a href="/verify-otp" style="background: #FFC107; color: #212529; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Continue to OTP Verification</a>
+              </div>
+            `);
+          }
+          
           return res.send(`
             <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
               <h2 style="color: #E74C3C;">📧 Email Service Error</h2>
               <p>Cannot send verification email at the moment.</p>
               <p><strong>Error:</strong> ${emailResult.error}</p>
-              <p>Please try again later or contact support.</p>
-              <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a>
+              
+              ${emailResult.suggestions ? `
+                <div style="text-align: left; margin: 20px auto; max-width: 400px; background: #F8F9FA; padding: 15px; border-radius: 5px;">
+                  <strong>💡 Possible Solutions:</strong>
+                  <ul>
+                    ${emailResult.suggestions.map(suggestion => `<li>${suggestion}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+              
+              <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Try Again</a>
+              <a href="/debug-email" style="background: #6C757D; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Debug Config</a>
             </div>
           `);
         }
@@ -253,9 +379,28 @@ app.post("/create", async (req, res) => {
     const emailResult = await sendOTPEmail(email, otp);
     
     if (!emailResult.success) {
+      // Check if we're in development mode with console fallback
+      if (emailResult.devMode) {
+        console.log("🔧 Development mode - keeping user account despite email failure");
+        return res.send(`
+          <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center; background: #FFF3CD; border: 1px solid #FFEAA7;">
+            <h2 style="color: #856404;">🔧 Development Mode - Registration Complete!</h2>
+            <p>Your account has been created successfully!</p>
+            <p><strong>Email service is not configured, but your OTP has been logged to the console.</strong></p>
+            <p><strong>Check the terminal/logs for your OTP code!</strong></p>
+            <div style="background: #F8F9FA; padding: 15px; margin: 20px 0; border-radius: 5px;">
+              <p><strong>📧 Email:</strong> ${email}</p>
+              <p><strong>🔐 Method:</strong> ${emailResult.method}</p>
+              <p><strong>💡 Tip:</strong> Check your terminal for the OTP code</p>
+            </div>
+            <a href="/verify-otp" style="background: #FFC107; color: #212529; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Continue to OTP Verification</a>
+          </div>
+        `);
+      }
+      
       console.error("❌ Email failed for new user - cleaning up");
       
-      // Clean up the created user if email fails
+      // Clean up the created user if email fails in production
       await userModel.deleteOne({ email });
       
       return res.send(`
@@ -263,8 +408,23 @@ app.post("/create", async (req, res) => {
           <h2 style="color: #E74C3C;">📧 Email Service Error</h2>
           <p>Account created but verification email could not be sent.</p>
           <p><strong>Technical Details:</strong> ${emailResult.error}</p>
-          <p>The account has been removed. Please try registering again.</p>
-          <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Try Again</a>
+          
+          ${emailResult.suggestions ? `
+            <div style="text-align: left; margin: 20px auto; max-width: 500px; background: #F8F9FA; padding: 15px; border-radius: 5px;">
+              <strong>🔧 Troubleshooting Steps:</strong>
+              <ul>
+                ${emailResult.suggestions.map(suggestion => `<li>${suggestion}</li>`).join('')}
+              </ul>
+            </div>
+          ` : ''}
+          
+          <p><strong>The account has been removed. Please try registering again after fixing the email configuration.</strong></p>
+          
+          <div style="margin-top: 20px;">
+            <a href="/register" style="background: #3498DB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Try Again</a>
+            <a href="/debug-email" style="background: #6C757D; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Debug Email Config</a>
+            <a href="/test-email?email=${encodeURIComponent(email)}" style="background: #17A2B8; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px;">Test Email</a>
+          </div>
         </div>
       `);
     }
